@@ -1,10 +1,9 @@
 /* src/components/Header.css */
-
 .App-header {
     background-color: #8093f1; /* Primary color for the header */
     color: #fff; /* Text color */
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center navigation items */
     align-items: center;
     padding: 15px 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
@@ -39,15 +38,13 @@
   }
   
   .App-header nav ul li a {
-    color: #fff; /* Link color */
+    color: #fff; /* Nav link color */
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
-    margin-left: -20px;
-    transition: color 0.3s ease;
   }
   
   .App-header nav ul li a:hover {
-    color: #72ddf7; /* Color on hover */
+    color: #f1c40f; /* Hover color for links */
   }
   

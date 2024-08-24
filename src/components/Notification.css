@@ -3,16 +3,17 @@
 .notification {
     position: fixed;
     top: 20px;
-    right: -300px; /* Start hidden off-screen */
+    right: -100%;
     background-color: #ffcccb; /* Light red for errors */
     padding: 15px;
     border-radius: 8px;
     color: #d8000c;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    transition: right 0.5s ease;
+    transition: right 0.8s ease;
   }
   
   .notification.show {
+    display: block;
     right: 20px; /* Move into view */
   }
   

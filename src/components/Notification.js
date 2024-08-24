@@ -1,5 +1,4 @@
 // src/components/Notification.js
-
 import React, { useEffect } from 'react';
 import './Notification.css';
 
@@ -8,7 +7,7 @@ function Notification({ message, show, onClose }) {
     if (show) {
       const timer = setTimeout(() => {
         onClose();
-      }, 2000); // Notification duration
+      }, 5000); // Notification duration
 
       return () => clearTimeout(timer);
     }
