@@ -1,15 +1,23 @@
+/* App.css */
+
 .App {
-  text-align: center;
-  background-color: #f7aef8; /* Light purple background */
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+.App-header {
+  flex: 1; /* Grow to take up space */
 }
 
 .App-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex: 1; /* Grow to take up space */
+}
+
+.App-footer {
+  background-color: #b388eb; /* Light lavender for footer */
+  padding: 10px;
+  text-align: center;
+  color: #414042; /* Dark gray for text */
+  width: 100%;
 }

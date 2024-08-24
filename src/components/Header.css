@@ -1,13 +1,53 @@
-.header {
-    background-color: #b388eb; /* Light lavender for header */
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    color: #414042; /* Dark gray for text */
+/* src/components/Header.css */
+
+.App-header {
+    background-color: #8093f1; /* Primary color for the header */
+    color: #fff; /* Text color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
   }
   
-  .header h1 {
+  .App-header .logo {
+    flex: 1; /* Ensure logo is on the left */
+  }
+  
+  .App-header .logo h1 {
     margin: 0;
-    color: #ffffff; /* Blue shade */
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff; /* Logo text color */
+  }
+  
+  .App-header nav {
+    flex: 2; /* Center navigation items */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .App-header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .App-header nav ul li {
+    margin: 0 25px;
+  }
+  
+  .App-header nav ul li a {
+    color: #fff; /* Link color */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: -20px;
+    transition: color 0.3s ease;
+  }
+  
+  .App-header nav ul li a:hover {
+    color: #72ddf7; /* Color on hover */
   }
   

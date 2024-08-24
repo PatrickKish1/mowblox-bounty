@@ -1,39 +1,35 @@
 import React, { useState } from 'react';
-import { Web3 } from "web3";
-import { ChainlinkPlugin, MainnetPriceFeeds } from "@chainsafe/web3-plugin-chainlink";
+import axios from 'axios';
 import './CryptoList.css';
 
 function CryptoList() {
   const initialCryptos = [
-    { name: "BTC", price: "000" },
-    { name: "ETH", price: "000" },
-    { name: "LTC", price: "000" },
-    { name: "BNB", price: "000" },
-    { name: "ADA", price: "000" },
-    { name: "XRP", price: "000" },
-    { name: "DOT", price: "000" },
-    { name: "DOGE", price: "000" },
-    { name: "LINK", price: "000" },
-    { name: "UNI", price: "000" }
+    { name: "BTC", id: "bitcoin", price: "N/A" },
+    { name: "ETH", id: "ethereum", price: "N/A" },
+    { name: "LTC", id: "litecoin", price: "N/A" },
+    { name: "BNB", id: "binancecoin", price: "N/A" },
+    { name: "ADA", id: "cardano", price: "N/A" },
+    { name: "XRP", id: "ripple", price: "N/A" },
+    { name: "DOT", id: "polkadot", price: "N/A" },
+    { name: "DOGE", id: "dogecoin", price: "N/A" },
+    { name: "LINK", id: "chainlink", price: "N/A" },
+    { name: "UNI", id: "uniswap", price: "N/A" }
   ];
   
   const [cryptoPrices, setCryptoPrices] = useState(initialCryptos);
 
-  const web3 = new Web3(window.ethereum);
-  web3.registerPlugin(new ChainlinkPlugin());
-
   async function getCryptoPrices() {
-    const updatedPrices = [...cryptoPrices];
-    
-    // Fetching prices (mockup, need to map these cryptos with MainnetPriceFeeds)
-    const cryptos = [MainnetPriceFeeds.BtcUsd, MainnetPriceFeeds.EthUsd]; // Add other feeds as necessary
-
-    for (let i = 0; i < cryptos.length; i++) {
-      const price = await web3.chainlink.getPrice(cryptos[i]);
-      updatedPrices[i].price = price.answer.toString().substring(0, 5);
+    try {
+      const ids = cryptoPrices.map(crypto => crypto.id).join(',');
+      const response = await axios.get(`http://api.coingecko.com/api/v3/simple/price?ids=${ids}&vs_currencies=usd`);
+      const updatedPrices = cryptoPrices.map(crypto => ({
+        ...crypto,
+        price: response.data[crypto.id] ? response.data[crypto.id].usd : 'N/A'
+      }));
+      setCryptoPrices(updatedPrices);
+    } catch (error) {
+      console.error("Error fetching crypto prices", error);
     }
-
-    setCryptoPrices(updatedPrices);
   }
 
   return (
