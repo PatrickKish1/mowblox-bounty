@@ -1,50 +1,99 @@
 .crypto-list {
     text-align: center;
-  }
-  
-  .crypto-table {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    font-size: 1.2rem;
-    background-color: #72ddf7; /* Light blue for table background */
-  }
-  
-  .crypto-table th, .crypto-table td {
-    border: 1px solid #fff;
-    padding: 10px;
-    text-align: center;
-    color: #414042; /* Dark gray for text */
-  }
-  
-  .crypto-table th {
-    background-color: #fdc5f5; /* Light pink for table header */
-    color: #414042; /* Dark gray for header text */
-  }
-  
-  .crypto-table tr:nth-child(even) {
-    background-color: #e0f7fa; /* Very light cyan for alternate row */
-  }
-  
-  button {
-    background-color: #ff6600; /* Bright orange color */
+}
+
+.getprice{
+    background-color: #4caf50; /* Blue color */
     border: none;
     border-radius: 8px;
     color: white;
-    padding: 10px 20px;
+    padding: 5px 10px;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    margin-top: 20px;
-  }
-  
-  button:hover {
-    background-color: #e65c00; /* Slightly darker orange on hover */
+}
+
+
+.crypto-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: separate; /* Use separate borders for rounded corners */
+    border-spacing: 0; /* Remove spacing between cells */
+    font-size: 1rem;
+    background-color: #f4f6f8; /* Light gray for table background */
+}
+
+.crypto-table th, .crypto-table td {
+    border: 1px solid #ddd; /* Light border color */
+    padding: 8px;
+    text-align: center;
+    color: #333; /* Dark gray for text */
+}
+
+.crypto-table th {
+    background-color: #4caf50; /* Green for table header */
+    color: white; /* White for header text */
+}
+
+.crypto-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for alternate row */
+}
+
+.crypto-table input,
+.crypto-table select {
+    width: 80%; /* Full width for inputs and selects */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.crypto-table button {
+    background-color: #007bff; /* Blue color */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 5px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.crypto-table button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
     transform: scale(1.05); /* Slight zoom on hover */
-  }
-  
-  button:active {
-    background-color: #cc5200; /* Even darker on click */
+}
+
+.crypto-table button:active {
+    background-color: #004494; /* Even darker on click */
     transform: scale(0.95); /* Slightly shrink on click */
-  }
-  
+}
+
+/* Adjust column widths */
+.crypto-table th:nth-child(1), 
+.crypto-table td:nth-child(1) {
+    width: 150px; /* Reduced width for the Converted Amount column */
+}
+
+.crypto-table th:nth-child(2), 
+.crypto-table td:nth-child(2) {
+    width: 150px; /* Reduced width for the Converted Amount column */
+}
+
+.crypto-table th:nth-child(3), 
+.crypto-table td:nth-child(3) {
+    width: 150px; /* Reduced width for the Converted Amount column */
+}
+
+.crypto-table th:nth-child(4), 
+.crypto-table td:nth-child(4) {
+    width: 120px; /* Width for the Convert button column */
+}
+
+.crypto-table th:nth-child(5), 
+.crypto-table td:nth-child(5) {
+    width: 150px; /* Reduced width for the Converted Amount column */
+}
+
+
+.crypto-table th:nth-child(6), 
+.crypto-table td:nth-child(6) {
+    width: 150px; /* Reduced width for the Converted Amount column */
+}

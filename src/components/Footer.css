@@ -1,8 +1,10 @@
 .footer {
     background-color: #b388eb; /* Light lavender for footer */
     padding: 10px;
+    max-width: 1243px;
     width: 100%;
     text-align: center;
     color: #414042; /* Dark gray for text */
+    overflow-x: hidden;
   }
   
