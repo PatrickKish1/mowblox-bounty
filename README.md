@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Crypto Price Conversion dApp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Crypto Price Conversion dApp! This decentralized application allows you to fetch real-time cryptocurrency prices and convert amounts between different cryptocurrencies. It's a useful tool for anyone looking to stay updated on crypto market trends and perform quick conversions.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Real-time Crypto Prices**: Get the latest prices for popular cryptocurrencies such as BTC, ETH, USDT, and more.
+- **Conversion Tool**: Enter an amount in one cryptocurrency and convert it to another based on current prices.
+- **User-Friendly Interface**: Simple and intuitive interface to make crypto conversions easy and fast.
 
-### `npm start`
+## Plugins and Tools Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This dApp is built using the following plugins and tools:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Web3.js**: A collection of libraries that allow you to interact with a local or remote Ethereum node using HTTP, IPC, or WebSocket.
+- **Chainlink Plugin for Web3.js**: Provides access to real-time price feeds directly from Chainlink, ensuring accurate and up-to-date crypto prices.
+- **BigNumber.js**: A library for arbitrary-precision decimal and non-decimal arithmetic. This was used to handle precise calculations with large numbers.
 
-### `npm test`
+## Deployment
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The dApp is deployed and can be accessed at the following link:  
+[Crypto Price Conversion dApp](https://billions-apple-thousands.on-fleek.app/)
 
-### `npm run build`
+## Video Demo
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To see the dApp in action, check out our video demo on GitHub.  
+[Watch the Video Demo](https://github.com/PatrickKish1/mowblox-bounty/blob/main/videos/dApp.mp4)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- GitHub does not support direct video playback in markdown, but if the video is hosted elsewhere like YouTube or Vimeo, you can embed it using the HTML iframe tag like this:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/video-id" frameborder="0" allowfullscreen></iframe>
 
-### `npm run eject`
+-->
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Experience Building the dApp
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Building this dApp was an amazing adventure! We faced several challenges, from integrating the Chainlink plugin to handling large numbers accurately with BigNumber.js. Each hurdle taught us something new, and the end result is a robust, user-friendly application that serves the needs of crypto enthusiasts.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## How to Use
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Visit the dApp**: Head over to our [dApp](https://billions-apple-thousands.on-fleek.app/).
+2. **Fetch Prices**: Click on the "Get Crypto Prices" button to retrieve the latest prices.
+3. **Enter Amounts**: Input the amount of cryptocurrency you want to convert.
+4. **Select Conversion**: Choose the cryptocurrency to which you want to convert.
+5. **Convert**: Click the "Convert" button to see the converted amount.
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+We welcome contributions from the community! If you have ideas or find bugs, please open an issue or submit a pull request.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for checking out our Crypto Price Conversion dApp. Happy converting!
