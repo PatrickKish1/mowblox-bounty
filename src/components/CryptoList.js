@@ -148,6 +148,14 @@ function CryptoList() {
         show={showNotification} 
         onClose={() => setShowNotification(false)}
       />
+
+      {/* Message with heart emoji and GitHub link */}
+      <div className="footer-message">
+        Made with <span role="img" aria-label="heart">❤️</span> by Riley
+        <a href="https://github.com/PatrickKish1/mowblox-bounty" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdns.iconmonstr.com/wp-content/releases/preview/2012/240/iconmonstr-github-1.png" alt="GitHub" style={{ width: '20px', height: '20px', marginLeft: '5px' }} />
+        </a>
+      </div>
     </div>
   );
 }
