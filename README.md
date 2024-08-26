@@ -24,7 +24,7 @@ The dApp is deployed and can be accessed at the following link:
 ## Video Demo
 
 To see the dApp in action, check out our video demo on GitHub.  
-[Watch the Video Demo](https://github.com/PatrickKish1/mowblox-bounty/blob/main/videos/dApp.mp4)
+[Watch the Video Demo](https://youtu.be/ofHiKRPeElc)
 
 <!-- GitHub does not support direct video playback in markdown, but if the video is hosted elsewhere like YouTube or Vimeo, you can embed it using the HTML iframe tag like this:
 
